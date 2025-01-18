@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import MainPage from '../views/MainPage.vue';
+import DateTimePicker from '../views/DateChoser.vue';
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: '/:userId',
     name: 'HomeView',
     component: HomeView
+  },
+  {
+    path: '/date',
+    name: 'DateTimePicker',
+    component: DateTimePicker
   }
 ];
 

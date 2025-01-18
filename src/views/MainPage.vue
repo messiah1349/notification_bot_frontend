@@ -4,18 +4,6 @@
       <button @click="authorizeWithTelegram">Login with Telegram</button>
     </div>
   </template>
-<!--   
-  <script>
-  export default {
-    methods: {
-      authorizeWithTelegram() {
-        const telegramAuthUrl = `https://oauth.telegram.org/auth?bot_id=214139458&origin=http://localhost:8080&embed=0`;
-        window.location.href = telegramAuthUrl;
-      }
-    }
-  };
-  </script> -->
-  
 
   <script>
   export default {
