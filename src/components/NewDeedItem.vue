@@ -1,5 +1,5 @@
 <template>
-    <li class="new-deed-item list-item">
+    <li class="new-deed-item notificationRow">
         <input
             v-model="newDeedName"
             placeholder="New deed name"

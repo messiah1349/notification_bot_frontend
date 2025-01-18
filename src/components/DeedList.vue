@@ -3,7 +3,11 @@
       <h2>Deeds</h2>
       <ul class="deeeds-list">
         <div v-for="deed in deeds" :key="deed.id">
-          <DeedItem :deed="deed" @deedDeleted="fetchDeeds" />
+          <DeedItem 
+            :deed="deed" 
+            @deedDeleted="fetchDeeds" 
+            @notificationHasSet="fetchDeeds" 
+          />
         </div>
         <NewDeedItem @deedAdded="fetchDeeds"/>
       </ul>
